@@ -1,0 +1,167 @@
+/* Base styles */
+body {
+  display:flex;
+  flex-direction: column; /* Stack header, main, and footer vertically */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  min-height: 100vh;
+}
+
+main {
+  text-align: center;
+  padding: 50px;
+  flex: 1;
+}
+.section {
+  padding: 50px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #f4f4f4, #ffffff); /* Subtle gradient */
+  border-radius: 10px; /* Rounded corners */
+  margin: 5px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  
+
+.service-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.service-box {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-box:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+/* Light theme */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Centers all content horizontally */
+  align-items: center; /* Centers all content vertically */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  gap: 20px; /* Add spacing between items */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex; /* Flexbox for horizontal alignment of links */
+  gap: 20px; /* Spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+.theme-icon {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+
+.theme-icon:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+  color: #f1c40f; /* Change color on hover */
+}
+footer {
+  background-color: #34495e; /* Matches dark theme header for consistency */
+  color: #ecf0f1; /* Light text for contrast */
+  text-align: center; /* Centers the footer content */
+  padding: 20px; /* Adds space inside the footer */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle top shadow */
+  position: relative; /* Keeps footer positioning flexible */
+  font-size: 14px; /* Adjusts text size for readability */
+}
+
+footer a {
+  color: #f1c40f; /* Adds accent color for footer links */
+  text-decoration: none; /* Removes underline from links */
+  transition: color 0.3s ease; /* Smooth hover effect for links */
+}
+
+footer a:hover {
+  color: #e67e22; /* Changes link color on hover */
+}
+
+/* Light theme */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+/* Dark theme */
+body.dark {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+/* Light theme styling for sections */
+body.light .section {
+  background: linear-gradient(to right, #ffffff, #f4f4f4); /* Light gradient */
+  color: #000; /* Dark text for contrast */
+}
+
+/* Dark theme styling for sections */
+body.dark .section {
+  background: linear-gradient(to right, #2c3e50, #34495e); /* Dark gradient */
+  color: #ecf0f1; /* Light text for readability */
+}
+
+.section.fade-in {
+  opacity: 1;
+  transform: translateY(0); /* Bring section to its original position */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+
+
+.hero {
+  background: linear-gradient(90deg, #35424a, #5a90f4); /* Gradient background */
+  color: white; /* White text for contrast */
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.hero h1 {
+  font-size: 48px; /* Large heading */
+  margin: 10px 0;
+}
